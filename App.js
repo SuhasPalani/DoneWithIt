@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableHighlight, TouchableNativeFeedback,SafeAreaView, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableHighlight, Alert, TouchableNativeFeedback,SafeAreaView, Button } from 'react-native';
 
 export default function App() {
   
@@ -12,7 +12,13 @@ export default function App() {
       </TouchableNativeFeedback>
       <StatusBar style="auto" /> */}
 
-      <Button title="Click Me" color="orange" onPress={() => console.log("Button Tapped")}/>
+      <Button 
+      title="Click Me" 
+      color="orange" 
+      onPress={() => Alert.alert("My title", "My message",[
+        { text: "Yes", onPress: () => console.log("Yes") },
+        { text: "No", onPress: () => console.log("No")},
+      ])}/>
     </SafeAreaView>
   );
 }
