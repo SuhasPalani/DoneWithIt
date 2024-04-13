@@ -1,6 +1,6 @@
 # DoneWithIt
 
-DoneWithIt is a simple mobile app built with React Native for managing tasks.
+DoneWithIt is a simple mobile app built with React Native.
 
 ## Installation
 
