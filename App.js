@@ -42,7 +42,10 @@ export default function App() {
       <View style={{
         backgroundColor: 'gold',
         width: 100,
-        height: 100
+        height: 100,
+        // top: 20,
+        // position: 'relative',
+        position: 'absolute',
       }}/>
       <View style={{
         backgroundColor: 'tomato',
