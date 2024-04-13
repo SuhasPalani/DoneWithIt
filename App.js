@@ -33,7 +33,10 @@ export default function App() {
       <View style={{
         backgroundColor: 'dodgerblue',
         width: 100,
-        height: 300,
+        height: 100, 
+        // flexShrink: 1,
+        // flexBasis: 100,//map width or height
+        // flexGrow: 1,
         // alignSelf: 'flex-start'
       }}/>
       <View style={{
@@ -46,16 +49,7 @@ export default function App() {
         width: 100,
         height: 100
       }}/>
-      <View style={{
-        backgroundColor: 'grey',
-        width: 100,
-        height: 100
-      }}/>
-      <View style={{
-        backgroundColor: 'greenyellow',
-        width: 100,
-        height: 100
-      }}/>
+      
 
     </View>
   );
