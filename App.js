@@ -5,7 +5,7 @@ export default function App() {
   
   
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[styles.container,containerStyle]}>
       {/* <Text >Hello React Native!</Text>
       <TouchableNativeFeedback onPress={() => console.log("Image Tapped")}>
       <View style={{ width:200,height:70,backgroundColor:"dodgerblue" }}></View>
@@ -14,15 +14,15 @@ export default function App() {
 
       <Button 
       title="Click Me" 
-      color="orange" 
+      color="blue" 
 
-      
+      onPress={ () => console.log("Pressed")}
       // Alert.alert method
       // onPress={() => Alert.alert("My title", "My message",[
       //   { text: "Yes", onPress: () => console.log("Yes") },
       //   { text: "No", onPress: () => console.log("No")}, 
       // ])}
-      
+
       // Alert.prompt
       // used only in ios, this works like what ever the user types, gets displayed
       // onPress={() =>
@@ -33,6 +33,8 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+const containerStyle= { backgroundColor:"orange" };
 
 const styles = StyleSheet.create({
   container: {
