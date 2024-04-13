@@ -15,10 +15,21 @@ export default function App() {
       <Button 
       title="Click Me" 
       color="orange" 
-      onPress={() => Alert.alert("My title", "My message",[
-        { text: "Yes", onPress: () => console.log("Yes") },
-        { text: "No", onPress: () => console.log("No")},
-      ])}/>
+
+      
+      // Alert.alert method
+      // onPress={() => Alert.alert("My title", "My message",[
+      //   { text: "Yes", onPress: () => console.log("Yes") },
+      //   { text: "No", onPress: () => console.log("No")}, 
+      // ])}
+      
+      // Alert.prompt
+      // used only in ios, this works like what ever the user types, gets displayed
+      // onPress={() =>
+      // Alert.prompt("My title","My message", (text) => console.log(text))
+      // }
+
+      />
     </SafeAreaView>
   );
 }
