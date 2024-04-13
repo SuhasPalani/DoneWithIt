@@ -12,15 +12,20 @@ import {
   Platform,
   Button,
 } from "react-native";
+import {useImageDimensions,useDeviceOrientation} from "@react-native-community/hooks";
+
+
 
 export default function App() {
-  console.log(Dimensions.get("screen"));
+  // console.log(useDeviceOrientation());
+  // console.log(useImageDimensions());
+  const {landscape}=useDeviceOrientation();
   return (
-    <SafeAreaView style={[styles.container, containerStyle]}>
+    <SafeAreaView style={[styles.container]}>
       <View style={{
         backgroundColor: 'dodgerblue',
-        width: '50%',
-        height: 70,
+        width: '100%',
+        height: landscape ? '100%' : '30%',
       }}>
 
       </View>
